@@ -1,4 +1,7 @@
 /*
+TautulliWidget
+Version 2.1
+
 Copyright (c) 2021, Scott Immerman
 All rights reserved.
 
@@ -50,7 +53,7 @@ const getTautulliStatus = (dispatch) => {
 					if(showType == "episode") {
 						var showTitle = plexShowInfo['grandparent_title'] + ": " + "S" + plexShowInfo['parent_media_index'] +"E" + plexShowInfo['media_index'];
 						var showSubTitle = plexShowInfo['title']
-						var showPoster = tautulliImageURL + plexShowInfo['parent_thumb']
+						var showPoster = tautulliImageURL + plexShowInfo['grandparent_thumb']
 						var showBackground = tautulliImageURL + plexShowInfo['art']
 					} else {
 						var showTitle = plexShowInfo['title']
